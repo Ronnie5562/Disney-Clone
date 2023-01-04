@@ -1,16 +1,14 @@
 import styled from "styled-components";
 import { auth, provider } from "../firebase";
 
-const Header = (props) =>{
+const Header = (props) => {
 
-    const handleAuth = () =>{
-        auth.signInWithPopup(provider)
-            .then((result) =>{
-                console.log(result)}
-            )
-            .catch((error) => {
-                alert(error.message)
-            })
+    const handleAuth = () => {
+        auth
+           .signInWithPopup(provider)
+            .then((result) => {
+                console.log(result)
+            }).catch((err) => alert(err.message))
     }
 
     return (
@@ -19,27 +17,27 @@ const Header = (props) =>{
                 <img src="./images/logo.svg" alt="Disney+" />
             </Logo>
             <NavMenu>
-                <a href="/home">
+                <a href="/">
                     <img src="./images/home-icon.svg" alt="HomeIcon" />
                     <span>HOME</span>
                 </a>
-                <a href="/search">
+                <a href="/">
                     <img src="./images/search-icon.svg" alt="SearchIcon" />
                     <span>SEARCH</span>
                 </a>
-                <a href="/watchlist">
+                <a href="/">
                     <img src="./images/watchlist-icon.svg" alt="watchlistIcon" />
                     <span>WATCHLIST</span>
                 </a>
-                <a href="/originals">
+                <a href="/">
                     <img src="./images/original-icon.svg" alt="originalsIcon" />
                     <span>ORIGINALS</span>
                 </a>
-                <a href="/movies">
+                <a href="/">
                     <img src="./images/movie-icon.svg" alt="moviesIcon" />
                     <span>MOVIES</span>
                 </a>
-                <a href="/series">
+                <a href="/">
                     <img src="./images/series-icon.svg" alt="seriesIcon" />
                     <span>SERIES</span>
                 </a>

@@ -1,3 +1,4 @@
+//-webkit-mask-image: url(/_next/static/media/coral-cta-top.89e13f0f.svg);
 import { initializeApp } from 'firebase/app';
 import { getAuth } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
