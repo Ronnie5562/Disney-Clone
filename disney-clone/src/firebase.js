@@ -1,5 +1,6 @@
 //-webkit-mask-image: url(/_next/static/media/coral-cta-top.89e13f0f.svg);
 //-webkit-mask-image: url(/_next/static/media/coral-cta-bottom.b2063e35.svg);
+//gotten from https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3
 import { initializeApp } from 'firebase/app';
 import { getAuth } from "firebase/auth";
 import { GoogleAuthProvider } from "firebase/auth";
